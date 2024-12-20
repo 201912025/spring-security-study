@@ -16,6 +16,7 @@ public class CustomUserDetailsService implements UserDetailsService {
     private UserRepository userRepository;
 
 
+    // 로그인시 자동으로 username으로 UserEntiy를 찾아서 SecurityContext에 저장할 데이터로 변환후 저장.
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 

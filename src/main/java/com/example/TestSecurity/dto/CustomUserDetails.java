@@ -7,6 +7,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.ArrayList;
 import java.util.Collection;
 
+
+// UserEntity 정보를 SecurityContext에 저장할 데이터로 변환
 public class CustomUserDetails implements UserDetails {
 
     private UserEntity userEntity;
