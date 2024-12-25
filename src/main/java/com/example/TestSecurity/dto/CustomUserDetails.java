@@ -17,7 +17,15 @@ public class CustomUserDetails implements UserDetails {
         this.userEntity = userEntity;
     }
 
-    //권한 부여
+    /*
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        Collection<GrantedAuthority> collection = new ArrayList<>();
+        collection.add(new SimpleGrantedAuthority(userEntity.getRole()));
+        return collection;
+}
+     */
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         Collection<GrantedAuthority> collection = new ArrayList<>();
